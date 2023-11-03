@@ -20,20 +20,19 @@ function Lists() {
             age:35
 
         }
-    ];
-    
+    ]
   
   return (
     <div>{
-       
-            
-                <div key={index}  >
-                <h1>{item.name} </h1>
-                <p>{item.email}</p>
-                <p>{item.age}</p>
-                </div>
+        data.map((item,index)=> (
+            <div key={index}  > 
+            <h1>{item.name} </h1>
+               <p>{item.email}</p>
+               <p>{item.age}</p>
+              
 
-    }
+            </div>
+        ))
         
         }</div>
   )
